@@ -1,0 +1,20 @@
+{
+  "name": "prueba_final_db_1033487670_santiagorestrepoarismendy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/San1000-Ark/prueba_desempe-o_MOD4-BD-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/San1000-Ark/prueba_desempe-o_MOD4-BD-/issues"
+  },
+  "homepage": "https://github.com/San1000-Ark/prueba_desempe-o_MOD4-BD-#readme"
+}

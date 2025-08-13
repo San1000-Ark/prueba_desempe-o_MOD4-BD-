@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import pool from './config/db.js';
+import clientsRouter from './routes/clients.js';
 
 //load of files to EV
 dotenv.config();
@@ -14,7 +15,11 @@ app.get('/',(req,res)=>{
     res.send("API WORKING...");
 })
 
+//route for try 
+app.get()
+
 //routes
+app.use('/clients',clientsRouter);
 
 
 //start server
