@@ -15,9 +15,6 @@ app.get('/',(req,res)=>{
     res.send("API WORKING...");
 })
 
-//route for try 
-app.get()
-
 //routes
 app.use('/clients',clientsRouter);
 
