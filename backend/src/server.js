@@ -20,7 +20,7 @@ app.use('/clients',clientsRouter);
 
 
 //start server
-const PORT=process.env.PORT||3306;
+const PORT=process.env.PORT;
 app.listen(PORT,()=>{
     console.log(`server initialize on http://localhost:${PORT}`);
 })
