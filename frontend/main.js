@@ -4,7 +4,7 @@ const clientTable = document.getElementById('clientTable').getElementsByTagName(
 
 // function to get clients list
 function fetchClients() {
-    fetch('http://localhost:3306/clients')
+    fetch('http://localhost:3000/clients')
         .then(response => response.json())
         .then(data => {
             displayClients(data);
@@ -66,7 +66,7 @@ createForm.addEventListener('submit', e => {
     const phone_number = document.getElementById('phone_number').value;
     const email = document.getElementById('email').value;
 
-    fetch('http://localhost:3306/clients', {
+    fetch('http://localhost:3000/clients', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ function updateClient(id) {
 
 // function to eliminate client
 function deleteClient(id) {
-    fetch(`http://localhost:3306/clients/${id}`, {
+    fetch(`http://localhost:3000/clients/${id}`, {
         method: 'DELETE'
     })
         .then(response => response.json())

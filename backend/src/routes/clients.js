@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
 
 // GET client by id
 router.get("/:id", (req, res) => {
-  const { id } = req.params;
+  const {id} = req.params;
   pool.query("SELECT * FROM client WHERE id_client=?", [id], (err, results) => {
     if (err) return res.status(500).json({ error: err.message });
     if (results.length === 0) return res.status(404).json({ message: "CLIENT NOT FOUND" });
